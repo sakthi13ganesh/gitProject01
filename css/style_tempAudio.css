@@ -1,0 +1,24 @@
+body{
+  background: #263238;
+}
+
+.brsbtns input[type="button"]{
+  height:30px;
+  width: 40px;
+  position: relative;
+  border: 0;
+  border: 2px solid #0D47A1;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.brsbtns input[type="button"]:hover{
+  border: 0;
+  border: 2px solid #004D40;
+  background: #004D40;
+  outline: none;
+  border-radius: 10px;
+  transition: .25s;
+}

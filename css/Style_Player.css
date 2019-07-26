@@ -1,0 +1,30 @@
+body{
+  background-color: #263238;
+}
+
+.playerOuter{
+  width: 400px;
+  top: 90%;
+  left: 25%;
+  padding: 20px;
+  position: absolute;
+  background: none;
+  border: 2px solid #0D47A1;
+  border-radius: 22px;
+  display: inline;
+}
+
+.playerOuter .playerInner {
+  width: inherit;
+  height: 2px;
+  position: fixed;
+  background-color: #091919;
+}
+
+.playerOuter .playerGuide {
+  width: 5px;
+  height: 2px;
+  position: relative;
+  z-index: 1;
+  background: #0D47A1;
+}
