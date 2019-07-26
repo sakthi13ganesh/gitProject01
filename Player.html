@@ -2,6 +2,7 @@
 <html>
     <link rel="StyleSheet" href="css/Style_Player.css" />
     <link rel="StyleSheet" href="css/style_tempAudio.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/AudioControls.js"></script>
     <body>
       <div class="playerOuter">
@@ -15,9 +16,9 @@
         Unsupported!!!
       </audio>
       <div class="brsbtns">
-        <input type="button" value=" < " onclick="prevInQueue();">
-        <input type="button" value=&#9658 onclick="togCurrent();">
-        <input type="button" value=" > " onclick="nextInQueue();">
+        <input type="button" id="prev" value=" < " onclick="prevInQueue();">
+        <input type="button" id="playpause" value=&#9658 onclick="togCurrent();">
+        <input type="button" id="next" value=" > " onclick="nextInQueue();">
       </div>
   </body>
 </html>

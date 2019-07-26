@@ -3,6 +3,7 @@ var pos=0;
 var flag=false;
 var size=array.length;
 var isPlaying=false;
+var time=0;
 
 function nextInQueue(){
   var player=document.getElementById('Player');
@@ -18,6 +19,7 @@ function nextInQueue(){
   }
   player.play();
   isPlaying=true;
+
 }
 
 function prevInQueue(){
@@ -41,6 +43,11 @@ function togCurrent(){
   if(!flag){
     player.src=array[pos];
     player.play();
+    $(player).on("loadedmetadata",function(){ //Does'nt Follow for all cases
+      time=player.duration;
+      time*=1000;
+      $(".playerOuter .playerGuide").animate({left: '400px'},time);
+    });
     flag=true;
   }
   else {
