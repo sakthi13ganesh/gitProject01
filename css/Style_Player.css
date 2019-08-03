@@ -1,6 +1,10 @@
 body{
   background-color: #263238;
 }
+.evenOuter{
+  display: block;
+
+}
 
 .playerOuter{
   width: 400px;

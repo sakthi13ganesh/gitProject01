@@ -1,6 +1,10 @@
 body{
   background: #263238;
 }
+.brsbtns{
+  padding-top: 107.5%;
+  padding-left: 44%;
+}
 
 .brsbtns input[type="button"]{
   height:30px;
